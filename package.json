@@ -1,0 +1,16 @@
+{
+  "name": "grotlingcatcher",
+  "version": "0.0.1",
+  "description": "catch all the grotlings.",
+  "scripts": {
+    "testenv": "nodemon app.js --delay 1 -e js,styl,jade --debug"
+  },
+  "dependencies": {
+    "express": "latest",
+    "jade": "latest",
+    "stylus": "latest",
+    "nedb": "latest",
+    "async": "latest",
+    "socket.io": "latest"
+  }
+}

@@ -1,0 +1,35 @@
+doctype 5
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    header.main
+      nav
+        ul
+          li
+            a(href='/') play
+          li
+            a(href='/register') register
+          
+
+      form#login(action='/login', method='post')
+        fieldset
+          input(type='text', name='name')
+          input(type='password', name='pass')
+          input(type='submit', value='login')
+      
+    div#content
+      block content
+
+    footer.main
+      | born @
+      a(href='https://metalab.at') metalab
+
+    script(src='/js/thirdparty/jquery-2.0.3.min.js')
+    script(src='/js/scene.js')
+    script(src='/js/pickups.js')
+    script(src='/js/enemies.js')
+    script(src='/js/player.js')
+    script(src='/js/init.js')
