@@ -1,4 +1,4 @@
-doctype 5
+doctype html
 html(lang='en')
   head
     meta(charset="UTF-8")
@@ -12,14 +12,14 @@ html(lang='en')
             a(href='/') play
           li
             a(href='/register') register
-          
+
 
       form#login(action='/login', method='post')
         fieldset
           input(type='text', name='name')
           input(type='password', name='pass')
           input(type='submit', value='login')
-      
+
     div#content
       block content
 
